@@ -105,7 +105,7 @@ $(function () {
 
   // Smooth scroll with page header links
   (function () {
-      $("[data-scroll='smooth'] a[href*='#']:not([href='#'])").on('click', function () {
+      $("a[href*='#']:not([href='#'])").on('click', function () {
           if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') &&
               location.hostname === this.hostname) {
 
