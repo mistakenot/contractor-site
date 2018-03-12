@@ -1,0 +1,54 @@
+---
+layout: default
+---
+
+<div class="home">
+  <div class="page-header">
+    <div class="container" style="text-align: center">
+      <div class="row">
+        <div class="col-xs-24">
+          <h1>{{ page.title }}</h1>
+            <p>Helping you to solve problems and increase your bottom line through dilligent skills and cutting-edge technology.</p>
+            <br />
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <div class="container" style="text-align: center">
+    <section class="section">
+      <header class="section-header row">
+        <h1 class="section-title col-xs-24">
+          <a href="#page-header" class="no-outline">Header</a>
+        </h1>
+      </header>
+    </section>
+  </div>
+
+  {%- include skills-gallery.html -%}
+
+  {%- include contact.html -%}
+
+  {%- if site.posts.size > 0 -%}
+    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+    <ul class="post-list">
+      {%- for post in site.posts -%}
+      <li>
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <h3>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h3>
+        {%- if site.show_excerpts -%}
+          {{ post.excerpt }}
+        {%- endif -%}
+      </li>
+      {%- endfor -%}
+    </ul>
+
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  {%- endif -%}
+
+</div>
