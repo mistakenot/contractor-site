@@ -1,0 +1,28 @@
+.background-yellow {
+    background-color: #f6ef43
+}
+
+.header-test {
+    font-family: 'header-font';
+    font-size: 20px;
+    color: #313030;
+    margin: 0;
+}
+
+.break {
+    color: white;
+}
+
+.break-dot {
+    margin: 2px;
+}
+
+hr {
+    color: white;
+    border: 0.01rem solid;
+}
+
+@font-face {
+    font-family: 'header-font';
+    src: url('/assets/fonts/1/Montserrat (body)/Montserrat-Regular.ttf')
+}

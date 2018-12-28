@@ -2,46 +2,42 @@
 layout: default
 ---
 
-<div class="home">
-  <div class="page-header">
-    <div class="container" style="text-align: center">
-      <div class="row">
-        <div class="col-xs-24">
-          <h1>{{ page.title }}</h1>
-            <p>Helping you to solve problems and increase your bottom line through dilligent skills and cutting-edge technology.</p>
-            <br />
-          </div>
-        </div>
+<div class="container">
+  <img src="assets/img/logo/Logo Files/For Web/png/Color logo - no background.png" class="img-fluid">
+  <div class="text-center">
+    {% include break.html %}
+  </div>
+  <br>
+  <p class="text-center header-test"><strong>{</strong> A bespoke technology solutions company. <strong>}</strong></p>
+  <br>
+  <div class="text-center">
+    {% include break.html %}
+  </div>
+  <div class="d-flex flex-row flex-wrap justify-content-around bd-highlight mb-3 header-test">
+    <div>
+      <div class="d-flex align-items-center">
+        {% octicon beaker height:20px class:"align-middle" aria-label:hi %}
+        <div class="p-2 bd-highlight">Engineering</div>
+      </div>
+      <small>A thing</small>
+    </div>
+    <div class="d-flex align-items-center">
+      {% octicon cloud-upload height:20px class:"align-middle" aria-label:hi %}
+      <div class="p-2 bd-highlight">
+        Cloud
       </div>
     </div>
-
-  <div class="container" style="text-align: center">
-    <section class="section">
-      <header class="section-header row">
-        <h1 class="section-title col-xs-24">
-          <a href="#page-header" class="no-outline">Testimonials</a>
-        </h1>
-      </header>
-    </section>
+    <div class="d-flex align-items-center">
+      {% octicon git-merge height:20px class:"align-middle" aria-label:hi %}
+      <div class="p-2 bd-highlight">
+        Automation
+      </div>
+  </div>
   </div>
 
-  {%- include testimonials.html -%}
+</div>
 
-  <br />
-
-  <div class="container" style="text-align: center">
-    <section class="section">
-      <header class="section-header row">
-        <h1 class="section-title col-xs-24">
-          <a href="#page-header" class="no-outline">Technologies</a>
-        </h1>
-      </header>
-    </section>
-  </div>
-
-  {%- include skills-gallery.html -%}
-
-  {%- include contact.html -%}
+<div class="home">
 
   {%- if site.posts.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
