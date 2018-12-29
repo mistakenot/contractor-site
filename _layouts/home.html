@@ -2,63 +2,64 @@
 layout: default
 ---
 
-<div class="container">
+<div class="container-fluid logo">
   <img src="assets/img/logo/Logo Files/For Web/png/Color logo - no background.png" class="img-fluid">
-  <div class="text-center">
-    {% include break.html %}
-  </div>
-  <br>
-  <p class="text-center header-test"><strong>{</strong> A bespoke technology solutions company. <strong>}</strong></p>
-  <br>
-  <div class="text-center">
-    {% include break.html %}
-  </div>
-  <div class="d-flex flex-row flex-wrap justify-content-around bd-highlight mb-3 header-test">
-    <div>
-      <div class="d-flex align-items-center">
-        {% octicon beaker height:20px class:"align-middle" aria-label:hi %}
-        <div class="p-2 bd-highlight">Engineering</div>
-      </div>
-      <small>A thing</small>
-    </div>
-    <div class="d-flex align-items-center">
-      {% octicon cloud-upload height:20px class:"align-middle" aria-label:hi %}
-      <div class="p-2 bd-highlight">
-        Cloud
-      </div>
-    </div>
-    <div class="d-flex align-items-center">
-      {% octicon git-merge height:20px class:"align-middle" aria-label:hi %}
-      <div class="p-2 bd-highlight">
-        Automation
-      </div>
-  </div>
-  </div>
-
 </div>
 
-<div class="home">
-
-  {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-    <ul class="post-list">
-      {%- for post in site.posts -%}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
-
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-  {%- endif -%}
-
+<div class="container">
+  <br>
+  <div class="d-flex flex-row flex-wrap justify-content-around align-items-center bd-highlight mb-3 header-test">
+    <div id="card1" class="card shadow-sm" style="width: 260px; margin: 10px">
+      <div class="card-body">
+        <h5 class="card-title">
+          <div class="d-flex align-items-center">
+            {% octicon beaker height:20px class:"align-middle" aria-label:hi %}
+            <div class="p-2 bd-highlight card-text">Engineering</div>
+          </div>
+        </h5>
+        <small>Modern practices with a range of technologies.</small>
+      </div>
+    </div>
+    <div class="card shadow-sm" style="width: 260px; margin: 10px">
+      <div class="card-body">
+        <h5 class="card-title">
+          <div class="d-flex align-items-center">
+            {% octicon cloud-upload height:20px class:"align-middle" aria-label:hi %}
+            <div class="p-2 bd-highlight card-text">Cloud</div>
+          </div>
+        </h5>
+        <small>Google Cloud Certified infrastructure expertise.</small>
+      </div>
+    </div>
+    <div class="card shadow-sm" style="width: 260px; margin: 10px">
+      <div class="card-body">
+        <h5 class="card-title">
+          <div class="d-flex align-items-center">
+            {% octicon git-merge height:20px class:"align-middle" aria-label:hi %}
+            <div class="p-2 bd-highlight card-text">Automation</div>
+          </div>
+        </h5>
+        <small>Continious Development and Automated Testing.</small>
+      </div>
+    </div>
+  </div>
+  <br />
+  <div class="d-flex flex-row flex-wrap justify-content-center">
+    <address class="address">
+      <strong>Datadyne Ltd.</strong><br>
+      Suite One, 2nd Floor<br>
+      Everedene House<br>
+      Bournemouth, UK<br>
+      BH77DU<br>
+      <abbr title="Phone">P:</abbr> (123) 456-7890
+    </address>
+    <address class="address">
+      <strong>Contact</strong><br>
+      <a href="mailto:sales@datadyne.io">sales@datadyne.io</a>
+    </address>
+  </div>
+  <br />
+  <div class="d-flex flex-row justify-content-center">
+    <small class="text-center footer">Datadyne Ltd. is a limited company registered in England and Wales with registered number 11297197 and VAT registered number 292 6651 74.</small>
+  </div>
 </div>

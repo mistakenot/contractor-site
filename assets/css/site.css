@@ -2,6 +2,10 @@
     background-color: #f6ef43
 }
 
+.logo {
+    margin-top: 30px;
+}
+
 .header-test {
     font-family: 'header-font';
     font-size: 20px;
@@ -14,12 +18,23 @@
 }
 
 .break-dot {
-    margin: 2px;
+    margin-left: 20px;
 }
 
 hr {
     color: white;
     border: 0.01rem solid;
+}
+
+.address {
+    font-family: 'header-font';
+    margin: 10px 10px 10px 50px;
+    min-width: 200px;
+}
+
+.footer {
+    margin: 10px;
+    max-width: 470px;
 }
 
 @font-face {
