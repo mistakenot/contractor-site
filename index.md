@@ -6,6 +6,5 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 #
 layout: home
-title: .NET Developent Experience
+title: Datadyne Ltd.
 ---
-Something something greate. Blah blah blah.
