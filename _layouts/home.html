@@ -7,55 +7,93 @@ layout: default
 </div>
 
 <div class="container">
-  <br>
-  <div class="d-flex flex-row flex-wrap justify-content-around align-items-center bd-highlight mb-3 main-text">
-    <div id="card1" class="card shadow-sm" style="width: 260px; margin: 10px">
-      <div class="card-body">
-        <h5 class="card-title">
-          <div class="d-flex align-items-center">
-            {% octicon beaker height:20px class:"align-middle" aria-label:hi %}
-            <div class="p-2 bd-highlight card-text">Engineering</div>
-          </div>
-        </h5>
-        <small>Modern practices with a range of technologies.</small>
+  <section class="mt-4">
+    <p class="text-center lead">Software engineering practice based in the UK</p>
+  </section>
+  <hr class="my-5" style="max-width: 25rem;"/>
+  <section class="my-5">
+    <div class="d-flex flex-row flex-wrap justify-content-around align-items-center bd-highlight main-text">
+      <div id="card1" class="card shadow-sm" style="width: 260px; margin: 10px">
+        <div class="card-body">
+          <h5 class="card-title">
+            <div class="d-flex align-items-center">
+              {% octicon beaker height:20px class:"align-middle" aria-label:hi %}
+              <div class="p-2 bd-highlight card-text">Engineering</div>
+            </div>
+          </h5>
+          <small>Modern practices with a range of technologies.</small>
+        </div>
+      </div>
+      <div class="card shadow-sm" style="width: 260px; margin: 10px">
+        <div class="card-body">
+          <h5 class="card-title">
+            <div class="d-flex align-items-center">
+              {% octicon cloud-upload height:20px class:"align-middle" aria-label:hi %}
+              <div class="p-2 bd-highlight card-text">Cloud</div>
+            </div>
+          </h5>
+          <small>Google Cloud Platform, Kubernetes and more.</small>
+        </div>
+      </div>
+      <div class="card shadow-sm" style="width: 260px; margin: 10px">
+        <div class="card-body">
+          <h5 class="card-title">
+            <div class="d-flex align-items-center">
+              {% octicon git-merge height:20px class:"align-middle" aria-label:hi %}
+              <div class="p-2 bd-highlight card-text">Automation</div>
+            </div>
+          </h5>
+          <small>Continuous Development and Automated Testing.</small>
+        </div>
       </div>
     </div>
-    <div class="card shadow-sm" style="width: 260px; margin: 10px">
-      <div class="card-body">
-        <h5 class="card-title">
-          <div class="d-flex align-items-center">
-            {% octicon cloud-upload height:20px class:"align-middle" aria-label:hi %}
-            <div class="p-2 bd-highlight card-text">Cloud</div>
+  </section>
+
+  <section class="container my-5">
+    <p class="display-4 text-center">Previous clients</p>
+    <hr class="my-5" style="max-width: 25rem;"/>
+    <div class="d-flex flex-wrap justify-content-center">
+      <div class="d-flex flex-column justify-content-between" style="max-width: 33rem;">
+        <div class="d-flex justify-content-center align-items-center" style="height: 10rem;">
+          <img style="max-width: 20rem;" class="rounded" src="assets/img/university-of-salford.png" />
+        </div>
+        <blockquote class="blockquote text-center my-0">
+          <p class="mb-0 small">"Charlie is highly collaborative and quickly came up to speed with a project which is very complex. He went the extra mile to perform secondary research and create prototypes to advance the project on schedule."</p>
+          <footer class="blockquote-footer">Prof. Robin Bargar, Director of Digital & Creative Industry Collaboration</footer>
+        </blockquote>
+      </div>
+
+      <div class="d-flex flex-column justify-content-between" style="max-width: 33rem;">
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="d-flex flex-column justify-content-center" style="height: 10rem;">
+            <img style="max-width: 20rem; height: 5rem;" class="rounded" src="assets/img/dunnhumby.png" />
           </div>
-        </h5>
-        <small>Google Cloud Platform, Kubernetes and more.</small>
+        </div>
+        <blockquote class="blockquote text-center my-0">
+          <p class="mb-0 small">"Charlie is a flexible full stack developer, comfortable across many languages and technologies. He is professional, hard-working and knowledgeable. A great engineer to have on your team."</p>
+          <footer class="blockquote-footer">Paul Gamblen, Engineering & Technology Leader</footer>
+        </blockquote>
       </div>
     </div>
-    <div class="card shadow-sm" style="width: 260px; margin: 10px">
-      <div class="card-body">
-        <h5 class="card-title">
-          <div class="d-flex align-items-center">
-            {% octicon git-merge height:20px class:"align-middle" aria-label:hi %}
-            <div class="p-2 bd-highlight card-text">Automation</div>
-          </div>
-        </h5>
-        <small>Continuous Development and Automated Testing.</small>
-      </div>
+  </section>
+
+  <section class="my-5 fixed-bottom d-none d-xl-block">
+    <div class="d-flex flex-column justify-content-center align-items-center">
+      <p class="text-center footer d-flex flex-column justify-content-center align-items-center">
+        <span>London, UK</span>
+        <a href="mailto:sales@datadyne.io">sales@datadyne.io</a>
+        <small>Datadyne Ltd. is a limited company registered in England and Wales with registered number 11297197 and VAT registered number 292 6651 74.</small>
+      </p>
     </div>
-  </div>
-  <br />
-  <div class="d-flex flex-row flex-wrap justify-content-center">
-    <address class="address">
-      <strong>Datadyne Ltd.</strong><br>
-      Based in Manchester, UK<br>
-    </address>
-    <address class="address">
-      <strong>Contact</strong><br>
-      <a href="mailto:sales@datadyne.io">sales@datadyne.io</a>
-    </address>
-  </div>
-  <br />
-  <div class="d-flex flex-row justify-content-center">
-    <small class="text-center footer">Datadyne Ltd. is a limited company registered in England and Wales with registered number 11297197 and VAT registered number 292 6651 74.</small>
-  </div>
+  </section>
+
+  <section class="my-5 d-xl-none">
+    <div class="d-flex flex-column justify-content-center align-items-center">
+      <p class="text-center footer d-flex flex-column justify-content-center align-items-center">
+        <span>London, UK</span>
+        <a href="mailto:sales@datadyne.io">sales@datadyne.io</a>
+        <small>Datadyne Ltd. is a limited company registered in England and Wales with registered number 11297197 and VAT registered number 292 6651 74.</small>
+      </p>
+    </div>
+  </section>
 </div>
